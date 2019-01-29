@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+       
+<style>
+
+
+    .ho{
+        font-weight: bold;
+        color:white;
+        
+    }
+    
+</style>
+    
+</head>
+
+<body background="/static/img/black.jpg">
+<!-- <h1 id="title">CQ-TEEN(conversation questions-teenagers)</h1>  -->
+ <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+        
+            
+               
+          <ul class="nav navbar-nav">
+                  <li ><a href="/">Home</a></li>
+                  <li><a id="up" href="/signup">signup</a></li>
+                  <li><a id ="in"href="/signin1">signin</a></li>
+                  <li><a id="add "href="/add">add your problem </a></li>
+                  <li class="active"><a id="pro"href="/problems">problems </a></li>
+                                 
+                </ul>
+                
+          </ul>
+        </div>
+      </nav>
+      
+      
+  
+    <div class="row col" col-3>
+    {%for i in info%}
+    <div>       
+<br>
+<div class="ho"> 
+    <h1>   Problem: {{ i.problem }}</h1>
+        <br>
+        <br><h1>
+           pname:</h1> <p>{{ i.pname }}</p>
+        <br>
+        <br><h1>
+           Description:</h1><p>{{ i.description}} </p> 
+          </div>
+   {%endfor%}
+    </div>
+</div>
+   
+
+    </body>
+</html> 

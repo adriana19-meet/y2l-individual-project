@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>    
+    <style>
+    .navbar-brand{
+font-style: "serif";
+font-size: 35px;
+}
+body {
+    background-image: url("/static/img/problemm.jpg");
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+      
+    }
+ form{ width: 350px;
+        height: 400px;
+        background-image: linear-gradient(black,grey);
+        opacity:0.8;
+        
+        margin-left: 500px ;
+        margin-top: 100px;
+        }
+        #ll{margin-left: 80px;}
+  #btn{margin-left: 150px ;
+       
+}
+#title{margin-left: 10%;
+    color:white;
+    
+    margin:center;
+    font-size:50px;
+    font-family:'broadway';}
+  #label{
+   color: white;
+    font-size: 20px;
+    margin-left: 80px;
+    margin-top: 20px;
+  }
+    </style>
+     
+   
+    <body>
+        <h1 id="title">CQ-TEEN(conversation questions-teenagers)</h1>
+            <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                    
+                      <ul class="nav navbar-nav">
+                        <li ><a id="home" href="/">Home</a></li>
+                        <li><a id="up" href="/signup">signup</a></li>
+                        <li ><a id ="in"href="/signin1">signin</a></li>
+                        <li class="active"><a id="/add "href="add.html">add your problem </a></li>
+                        <li><a id="pro"href="/problems">problems </a></li>
+                      
+                      </ul>
+                      
+                    </div>
+             </nav>
+        <form action="/add" method="POST" >
+                <br>
+                <label id="label"> Name</label>
+                <br>
+                <input id=ll type="name" name="pname" placeholder="write your name">
+                
+                <br>
+                <label id="label" > Problem</label>
+                <br>
+                <input id=ll type="name" name="problem" placeholder="write title for your problem">
+                <br>
+                <label id="label" > description</label>
+                <br>
+                <input id=ll type="name" name="description" placeholder="describe your problem">
+                <br>
+                <!-- <label id="label" > add image </label>
+                <br> -->
+                <!-- <input id= "ll" type="file" name="pic" accept="image/*">
+                <br> -->
+            
+                <br>
+                
+                <input id ="btn" type="submit" name="add" value=" add " action="problems.html">
+              
+            </div>
+        </form>
+
+    </body>
+</html>
